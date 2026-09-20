@@ -1,0 +1,55 @@
+SentenceChunker benchmark
+max_sentences_per_chunk=8
+embedding_backend=gemini-embedding-001
+documents=59
+Note: mock embeddings are deterministic hashes, so scores are retrieval smoke-test data, not semantic-quality evidence.
+
+[1] Người mua nào đủ điều kiện Trả hàng COM, hạn mức của ShopeeVIP là bao nhiêu và trường hợp nào bị loại trừ?
+  filter={'audience': 'buyer', 'doc_id': 'shopee-chinh-sach-tra-hang-nguoi-mua'}
+  gold_doc_ids=['shopee-chinh-sach-tra-hang-nguoi-mua']
+  top-1 score=0.889721 id=shopee-chinh-sach-tra-hang-nguoi-mua#6 doc_id=shopee-chinh-sach-tra-hang-nguoi-mua
+    Việc áp dụng giới hạn hạn mức theo quy định tại Điểm này sẽ không ảnh hưởng đến các yêu cầu Trả hàng COM mà Người Mua đã thực hiện trước thời điểm nhận được thông báo vi phạm của Shopee; - iii. Trong trường hợp giới hạn hạn mức này được áp 
+  top-2 score=0.884841 id=shopee-chinh-sach-tra-hang-nguoi-mua#4 doc_id=shopee-chinh-sach-tra-hang-nguoi-mua
+    QUY ĐỊNH BỔ SUNG ĐỐI VỚI CÁC TRƯỜNG HỢP TRẢ HÀNG COM Việc Trả hàng COM được thực hiện với các quy định bổ sung như sau: ### 4.1. Đối tượng áp dụng - a. Trả hàng COM sẽ chỉ được áp dụng với các đối tượng như sau (“Người Mua hợp lệ”): - i. Ng
+  top-3 score=0.884379 id=shopee-chinh-sach-tra-hang-nguoi-mua#7 doc_id=shopee-chinh-sach-tra-hang-nguoi-mua
+    Yêu cầu Trả hàng COM sẽ không bị tính vào hạn mức nếu yêu cầu đó bị từ chối bởi Shopee. - iii. Hạn mức còn lại của tháng trước đó sẽ không được cộng dồn vào hạn mức của tháng tiếp theo trong bất cứ trường hợp nào. - iv. Quyền Trả hàng COM s
+
+[2] Người bán phải phản hồi yêu cầu Trả hàng/Hoàn tiền trong bao lâu, và điều gì xảy ra nếu không phản hồi đúng hạn?
+  filter={'audience': 'seller', 'doc_id': 'shopee-chinh-sach-tra-hang-nguoi-ban'}
+  gold_doc_ids=['shopee-chinh-sach-tra-hang-nguoi-ban']
+  top-1 score=0.767599 id=shopee-chinh-sach-tra-hang-nguoi-ban#10 doc_id=shopee-chinh-sach-tra-hang-nguoi-ban
+    QUYỀN CỦA NGƯỜI BÁN Khi nhận được yêu cầu trả hàng và/hoặc hoàn tiền từ phía Người Mua, Shopee sẽ xem xét và quyết định cho Người Mua được trả hàng/hoàn tiền, đồng thời thông báo (i) về yêu cầu trả hàng/hoàn tiền của Người Mua hoặc (ii) quy
+  top-2 score=0.729852 id=shopee-chinh-sach-tra-hang-nguoi-ban#12 doc_id=shopee-chinh-sach-tra-hang-nguoi-ban
+    9.3. Shopee sẽ tự động hoàn tiền cho Người Mua trong trường hợp Người Bán không phản hồi trong khoảng thời gian đã được quy định trước. Để biết thêm thông tin về thời hạn phản hồi của Người Bán, vui lòng nhấn vào ĐÂY. Để biết thêm thông tin
+  top-3 score=0.721633 id=shopee-chinh-sach-tra-hang-nguoi-ban#13 doc_id=shopee-chinh-sach-tra-hang-nguoi-ban
+    Shopee sẽ không chịu bất kỳ trách nhiệm nào có liên quan đến hoặc phát sinh từ việc Người Mua không tuân thủ các quy định liên quan dẫn đến việc chậm trễ hoặc không thể nhận tiền hoàn từ Shopee đối với Sản Phẩm Hoàn Trả. 9.5. Đối với các tr
+
+[3] Theo chính sách dành cho người bán, trường hợp nào người bán chịu chi phí vận chuyển chiều hoàn trả và trường hợp nào không phải chịu?
+  filter={'audience': 'seller', 'doc_id': 'shopee-chinh-sach-tra-hang-nguoi-ban'}
+  gold_doc_ids=['shopee-chinh-sach-tra-hang-nguoi-ban']
+  top-1 score=0.819656 id=shopee-chinh-sach-tra-hang-nguoi-ban#10 doc_id=shopee-chinh-sach-tra-hang-nguoi-ban
+    QUYỀN CỦA NGƯỜI BÁN Khi nhận được yêu cầu trả hàng và/hoặc hoàn tiền từ phía Người Mua, Shopee sẽ xem xét và quyết định cho Người Mua được trả hàng/hoàn tiền, đồng thời thông báo (i) về yêu cầu trả hàng/hoàn tiền của Người Mua hoặc (ii) quy
+  top-2 score=0.796293 id=shopee-chinh-sach-tra-hang-nguoi-ban#11 doc_id=shopee-chinh-sach-tra-hang-nguoi-ban
+    ### 7.2. Người Bán sẽ không phải chịu bất kỳ chi phí vận chuyển cho việc trả hàng chiều hoàn trả sản phẩm đối với: đơn yêu cầu trả hàng/hoàn tiền một phần (Người Mua chỉ nhấn yêu cầu trả hàng/hoàn tiền cho một hoặc một số sản phẩm trong đơn
+  top-3 score=0.779108 id=shopee-chinh-sach-tra-hang-nguoi-ban#0 doc_id=shopee-chinh-sach-tra-hang-nguoi-ban
+    # Chính sách Trả hàng và Hoàn tiền — Người Bán ## 1. ĐỐI TƯỢNG VÀ PHẠM VI ÁP DỤNG ### 1.1. Đối Tượng Áp Dụng Chính Sách Trả Hàng và Hoàn Tiền này áp dụng đối với Người Mua, Người Bán, các đơn vị cung cấp dịch vụ vận chuyển, nhân viên giao n
+
+[4] Nếu người mua tự sắp xếp trả hàng, chính sách hoàn chi phí khác nhau thế nào giữa sản phẩm Shopee Mall và sản phẩm không thuộc Shopee Mall?
+  filter={'audience': 'buyer', 'doc_id': 'shopee-chinh-sach-tra-hang-nguoi-mua'}
+  gold_doc_ids=['shopee-chinh-sach-tra-hang-nguoi-mua']
+  top-1 score=0.836462 id=shopee-chinh-sach-tra-hang-nguoi-mua#11 doc_id=shopee-chinh-sach-tra-hang-nguoi-mua
+    Với Sản Phẩm không thuộc Shopee Mall, Người Mua có thể lựa chọn hoàn trả Sản Phẩm: Theo hình thức “Lấy hàng hoàn trả tại nhà” hoặc “Gửi trả hàng tại bưu cục”: Người Mua không phải thanh toán bất cứ chi phí vận chuyển nào cho việc trả hàng. 
+  top-2 score=0.821454 id=shopee-chinh-sach-tra-hang-nguoi-mua#10 doc_id=shopee-chinh-sach-tra-hang-nguoi-mua
+    YÊU CẦU ĐỐI VỚI SẢN PHẨM HOÀN TRẢ Để hạn chế các rủi ro phát sinh liên quan đến việc hoàn trả Sản Phẩm, Người Mua lưu ý cần phải đóng gói Sản Phẩm Hoàn Trả theo quy định về đóng gói hàng hóa được quy định tại Chính Sách Vận Chuyển Shopee và
+  top-3 score=0.753609 id=shopee-chinh-sach-tra-hang-nguoi-mua#1 doc_id=shopee-chinh-sach-tra-hang-nguoi-mua
+    ĐIỀU KIỆN ÁP DỤNG 2.1. Theo các điều khoản và điều kiện được quy định trong Chính Sách Trả Hàng và Hoàn Tiền này và tạo thành một phần của Điều Khoản Dịch Vụ, Shopee đảm bảo quyền lợi của Người Mua bằng cách cho phép Người Mua gửi yêu cầu h
+
+[5] Nếu người bán đề xuất Hoàn tiền ngay, mức hoàn tối thiểu là bao nhiêu và người mua có lựa chọn gì nếu không đồng ý?
+  filter=None
+  gold_doc_ids=['shopee-chinh-sach-tra-hang-nguoi-mua', 'shopee-chinh-sach-tra-hang-nguoi-ban']
+  top-1 score=0.744612 id=shopee-chinh-sach-tra-hang-nguoi-ban#13 doc_id=shopee-chinh-sach-tra-hang-nguoi-ban
+    Shopee sẽ không chịu bất kỳ trách nhiệm nào có liên quan đến hoặc phát sinh từ việc Người Mua không tuân thủ các quy định liên quan dẫn đến việc chậm trễ hoặc không thể nhận tiền hoàn từ Shopee đối với Sản Phẩm Hoàn Trả. 9.5. Đối với các tr
+  top-2 score=0.744612 id=shopee-chinh-sach-tra-hang-nguoi-mua#13 doc_id=shopee-chinh-sach-tra-hang-nguoi-mua
+    Shopee sẽ không chịu bất kỳ trách nhiệm nào có liên quan đến hoặc phát sinh từ việc Người Mua không tuân thủ các quy định liên quan dẫn đến việc chậm trễ hoặc không thể nhận tiền hoàn từ Shopee đối với Sản Phẩm Hoàn Trả. 9.5. Đối với các tr
+  top-3 score=0.720157 id=shopee-quy-trinh-xu-ly-tra-hang#1 doc_id=shopee-quy-trinh-xu-ly-tra-hang
+    Phân loại phương án xử lý Trả hàng/ Hoàn tiền của Shopee Trong trường hợp yêu cầu Trả hàng/ Hoàn tiền của bạn được Shopee chấp nhận, tùy từng tính chất của sản phẩm hoặc đơn hàng, quyết định của Shopee sẽ bao gồm 1 trong 2 phương án sau: Nế
