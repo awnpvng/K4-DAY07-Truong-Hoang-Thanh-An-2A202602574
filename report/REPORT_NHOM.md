@@ -136,9 +136,9 @@ chunks = heading_chunker.chunk_document(content, metadata)
 
 | Thành viên              | Chiến lược (Strategy) | Điểm truy xuất (/10) | Điểm mạnh                                                    | Điểm yếu                                                     |
 | ------------------------- | ------------------------ | ----------------------- | --------------------------------------------------------------- | --------------------------------------------------------------- |
-| Phan Thi Khánh Linh      | FixedSize                | 6/10                    | Baseline đơn giản, dễ kiểm soát overlap                   | Có thể cắt giữa câu/điều khoản                          |
+| Phan Thị Khánh Linh     | FixedSize                | 6/10                    | Baseline đơn giản, dễ kiểm soát overlap                   | Có thể cắt giữa câu/điều khoản                          |
 | Trương Hoàng Thành An | Sentence                 | 6/10                    | Giữ ranh giới câu, ít phụ thuộc cấu trúc heading        | Chunk lớn nếu gom nhiều câu; một query cần nhiều section |
-| Nguyen Thi Minh Tien      | Recursive                | 8/10                    | 193 chunks, cân bằng kích thước và ngữ cảnh             | Có thể tách mất liên kết heading với nội dung           |
+| Nguyễn Thị Minh Tiến   | Recursive                | 10/10                   | 193 chunks, cân bằng kích thước và ngữ cảnh             | Có thể tách mất liên kết heading với nội dung           |
 | Lưu Quang Khải          | HeadingSection           | 10/10                   | Top-3 chứa đủ chunk liên quan, traceable bằng section_path | Cần parser heading riêng và fallback cho section quá dài   |
 
 **Chiến lược nào tốt nhất cho chủ đề này? Tại sao?**
